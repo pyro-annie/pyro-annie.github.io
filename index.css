@@ -1,0 +1,42 @@
+html {
+    font-family: 'Outfit', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Sofia Sans Condensed', sans-serif;
+    background-color:hsl(212, 45%, 89%)
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+    .card {
+        background-color: white;
+        width: 300px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 0.5rem;
+    }
+    .qr-image {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+        border-radius: 0.5rem;
+    }
+    .qr-text {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+   
+    @media (max-width: 375px) {
+        /* Reducimos el ancho de la tarjeta y la imagen para que quepan en la pantalla */
+        .card {
+          width: 200px;
+        }
+        .qr-image {
+          width: 150px;
+          height: 150px;
+        }
+      }
