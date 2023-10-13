@@ -31,18 +31,7 @@ body {
 }
 
 /* Estilos para pantallas con un ancho mínimo de 1440px */
-@media (min-width: 1440px) {
-  .card {
-    width: 500px; /* Usamos px para que el ancho sea fijo */
-  }
-  .qr-image {
-    width: 400px; /* Usamos px para que el ancho sea fijo */
-    height: 400px; /* Usamos px para que el alto sea fijo */
-  }
-  .qr-text {
-    font-size: 20px; /* Usamos px para que el tamaño de la fuente sea fijo */
-  }
-}
+
 @media (min-width: 375px) {
   .card {
     width: 300px; /* Modifica el ancho de la tarjeta según tus necesidades */
