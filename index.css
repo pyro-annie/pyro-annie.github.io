@@ -10,33 +10,36 @@ body {
     align-items: center;
     height: 100vh;
 }
-    .card {
-        background-color: white;
-        width: 300px;
-        border: 1px solid #ccc;
-        padding: 10px;
-        text-align: center;
-        margin: 0 auto;
-        border-radius: 0.5rem;
-    }
-    .qr-image {
-        width: 250px;
-        height: 250px;
-        margin: 0 auto;
-        border-radius: 0.5rem;
-    }
-    .qr-text {
-        margin-top: 10px;
-        font-size: 15px;
-    }
-   
-    @media (max-width: 375px) {
-        /* Reducimos el ancho de la tarjeta y la imagen para que quepan en la pantalla */
-        .card {
-          width: 200px;
-        }
-        .qr-image {
-          width: 150px;
-          height: 150px;
-        }
-      }
+.card {
+    background-color: white;
+    width: 80vw; /* Usamos vw para que el ancho se adapte al viewport */
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+}
+.qr-image {
+    width: 70vw; /* Usamos vw para que el ancho se adapte al viewport */
+    height: auto; /* Usamos auto para que el alto se ajuste proporcionalmente al ancho */
+    margin: 0 auto;
+    border-radius: 0.5rem;
+}
+.qr-text {
+    margin-top: 10px;
+    font-size: 1rem; /* Usamos rem para que el tamaño de la fuente se base en el tamaño de la raíz */
+}
+
+/* Estilos para pantallas con un ancho mínimo de 1440px */
+@media (min-width: 1440px) {
+  .card {
+    width: 500px; /* Usamos px para que el ancho sea fijo */
+  }
+  .qr-image {
+    width: 400px; /* Usamos px para que el ancho sea fijo */
+    height: 400px; /* Usamos px para que el alto sea fijo */
+  }
+  .qr-text {
+    font-size: 20px; /* Usamos px para que el tamaño de la fuente sea fijo */
+  }
+}
