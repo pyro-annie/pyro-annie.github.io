@@ -43,3 +43,16 @@ body {
     font-size: 20px; /* Usamos px para que el tamaño de la fuente sea fijo */
   }
 }
+@media (min-width: 375px) {
+  .card {
+    width: 300px; /* Modifica el ancho de la tarjeta según tus necesidades */
+  }
+  .qr-image {
+    width: 250px; /* Modifica el ancho de la imagen QR según tus necesidades */
+    height: 250px; /* Modifica la altura de la imagen QR según tus necesidades */
+  }
+  .qr-text {
+    font-size: 16px; /* Modifica el tamaño de fuente del texto QR según tus necesidades */
+  }
+}
+
